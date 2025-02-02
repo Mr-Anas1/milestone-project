@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher - Assignments</title>
+    <link rel="stylesheet" href="./assignment.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html"><h1>Learnerr</h1></a>
+      </div>
+
+      <div class="navbar-links">
+        <div class="nav-link">Assignments</div>
+        <div class="nav-link">Attendance</div>
+      </div>
+    </div>
+
+    <div class="assignment">
+      <div class="assignment-container">
+        <div class="title">Download PDFs</div>
+        <div class="assignment-upload-container">
+          <label>Select Folder to View Files: </label>
+          <select id="folderDownloadSelect">
+            <option value="folder1">Folder 1</option>
+            <option value="folder2">Folder 2</option>
+            <option value="folder3">Folder 3</option>
+          </select>
+          <button onclick="listFiles()">Show Files</button>
+        </div>
+        <ul id="fileList"></ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="line"></div>
+      <div class="footer-links">
+        <img
+          src="../../Assets/Icons/facebook-color-svgrepo-com.svg"
+          class="footer-icon"
+          alt="facebook"
+        />
+        <img
+          src="../../Assets/Icons/twitter-color-svgrepo-com.svg"
+          class="footer-icon"
+          alt="twitter"
+        />
+        <img
+          src="../../Assets/Icons/linkedin-svgrepo-com.svg"
+          class="footer-icon"
+          alt="linkedin"
+        />
+        <img
+          src="../../Assets/Icons/instagram-1-svgrepo-com.svg"
+          class="footer-icon"
+          alt="instagram"
+        />
+      </div>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
