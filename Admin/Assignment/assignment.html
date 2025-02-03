@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Dashboard</title>
-
-    <link rel="stylesheet" href="./dashboard.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Admin - Assignments</title>
+    <link rel="stylesheet" href="./assignment.css" />
   </head>
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="./dashboard.html"><h1>Learnerr</h1></a>
+        <a href="../index.html"><h1>Learnerr</h1></a>
       </div>
 
       <div class="navbar-links">
@@ -23,44 +21,30 @@
         </div>
         <div
           class="nav-link"
-          onclick="window.location.href='../Attendance/attendance.html'"
+          onclick="window.location.href='../Attendance/dashboard.html'"
         >
           Attendance
         </div>
       </div>
     </div>
 
-    <div class="dashboard">
-      <div class="dashboard-heading">
-        <h1>Hello, John</h1>
-        <img src="../../Assets/Icons/hand.png" alt="" />
-      </div>
-
-      <div class="dashboard-cards">
-        <div class="dashboard-card card-left">
-          <div class="card-heading">Attendance</div>
-          <div class="line"></div>
-          <img src="../../Assets/Images/attendance.svg" />
-          <div class="card-img"></div>
-          <button
-            class="card-btn"
-            onclick="window.location.href='../Attendance/attendance.html'"
-          >
-            View
-          </button>
+    <div class="assignment">
+      <div class="assignment-container">
+        <div class="title">Assignments</div>
+        <div class="assignment-upload-container">
+          <label id="folderSelect">Select Folder: </label>
+          <select id="folderSelect" class="btn">
+            <option value="folder1">Folder 1</option>
+            <option value="folder1">Folder 2</option>
+            <option value="folder1">Folder 3</option>
+          </select>
         </div>
 
-        <div class="dashboard-card card-right">
-          <div class="card-heading">Assignments</div>
-          <div class="line"></div>
-          <img src="../../Assets/Images/assignments.svg" />
-          <div class="card-img"></div>
-          <button
-            class="card-btn"
-            onclick="window.location.href='../Assignment/assignment.html'"
-          >
-            View
-          </button>
+        <br /><br />
+
+        <div class="file-upload-container">
+          <input type="file" id="fileInput" accept="application/pdf" />
+          <button onclick="uploadFile()">Upload</button>
         </div>
       </div>
     </div>

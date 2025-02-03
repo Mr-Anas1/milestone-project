@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>Admin - Users</title>
 
     <link rel="stylesheet" href="./dashboard.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,7 +11,7 @@
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="../index.html"><h1>Learnerr</h1></a>
+        <a href="../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
       </div>
 
       <div class="navbar-links">
@@ -23,7 +23,7 @@
         </div>
         <div
           class="nav-link"
-          onclick="window.location.href='../Attendance/attendance.html'"
+          onclick="window.location.href='../Attendance/dashboard.html'"
         >
           Attendance
         </div>
@@ -32,45 +32,31 @@
 
     <div class="dashboard">
       <div class="dashboard-heading">
-        <h1>Hello, Admin</h1>
-        <img src="../../Assets/Icons/hand.png" alt="" />
+        <h1>Users</h1>
       </div>
 
       <div class="dashboard-cards">
         <div class="dashboard-card card-left">
-          <div class="card-heading">Attendance</div>
+          <div class="card-heading">Teachers</div>
           <div class="line"></div>
-          <img src="../../Assets/Images/attendance.svg" />
+          <img src="../../Assets/Images/teachers.svg" />
           <div class="card-img"></div>
           <button
             class="card-btn"
-            onclick="window.location.href='../Attendance/dashboard.html'"
+            onclick="window.location.href='./Teachers/attendance.html'"
           >
             View
           </button>
         </div>
 
         <div class="dashboard-card card-right">
-          <div class="card-heading">Assignments</div>
+          <div class="card-heading">Students</div>
           <div class="line"></div>
-          <img src="../../Assets/Images/assignments.svg" />
+          <img src="../../Assets/Images/students.svg" />
           <div class="card-img"></div>
           <button
             class="card-btn"
-            onclick="window.location.href='../Assignment/assignment.html'"
-          >
-            View
-          </button>
-        </div>
-
-        <div class="dashboard-card card-end">
-          <div class="card-heading">Users</div>
-          <div class="line"></div>
-          <img src="../../Assets/Images/users.svg" />
-          <div class="card-img"></div>
-          <button
-            class="card-btn"
-            onclick="window.location.href='../Users/dashboard.html'"
+            onclick="window.location.href='./Students/attendance.html'"
           >
             View
           </button>

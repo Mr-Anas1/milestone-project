@@ -3,70 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher - Attendance</title>
+    <title>Admin - Attendance</title>
     <link rel="stylesheet" href="./attendance.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
+        <a href="../../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
       </div>
 
       <div class="navbar-links">
         <div
           class="nav-link"
-          onclick="window.location.href='../Assignment/assignment.html'"
+          onclick="window.location.href='../../Assignment/assignment.html'"
         >
           Assignments
         </div>
         <div
           class="nav-link"
-          onclick="window.location.href='../Attendance/attendance.html'"
+          onclick="window.location.href='../../Attendance/dashboard.html'"
         >
           Attendance
         </div>
       </div>
     </div>
 
-    <div class="chart-title"><h2>Attendance</h2></div>
+    <div class="chart-title"><h2>Users - Teachers</h2></div>
 
     <div class="table">
       <table border="1">
         <tr>
           <th>Name</th>
-          <th>Roll No</th>
-          <th>Attendance</th>
+          <th>Staff Id</th>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">John</td>
+          <td class="studentName">Marcus</td>
           <td>001</td>
-          <td>89%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Emma</td>
+          <td class="studentName">David</td>
           <td>002</td>
-          <td>95%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Liam</td>
+          <td class="studentName">Maya</td>
           <td>003</td>
-          <td>92%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Olivia</td>
+          <td class="studentName">Emma</td>
           <td>004</td>
-          <td>88%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Noah</td>
+          <td class="studentName">Johnson</td>
           <td>005</td>
-          <td>94%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Ava</td>
+          <td class="studentName">Mike</td>
           <td>006</td>
-          <td>90%</td>
         </tr>
       </table>
     </div>
@@ -75,33 +68,27 @@
       <div class="line"></div>
       <div class="footer-links">
         <img
-          src="../../Assets/Icons/facebook-color-svgrepo-com.svg"
+          src="../../../Assets/Icons/facebook-color-svgrepo-com.svg"
           class="footer-icon"
           alt="facebook"
         />
         <img
-          src="../../Assets/Icons/twitter-color-svgrepo-com.svg"
+          src="../../../Assets/Icons/twitter-color-svgrepo-com.svg"
           class="footer-icon"
           alt="twitter"
         />
         <img
-          src="../../Assets/Icons/linkedin-svgrepo-com.svg"
+          src="../../../Assets/Icons/linkedin-svgrepo-com.svg"
           class="footer-icon"
           alt="linkedin"
         />
         <img
-          src="../../Assets/Icons/instagram-1-svgrepo-com.svg"
+          src="../../../Assets/Icons/instagram-1-svgrepo-com.svg"
           class="footer-icon"
           alt="instagram"
         />
       </div>
       <div class="line"></div>
     </div>
-    <script>
-      function redirectToPage(element) {
-        const name = element.innerText.trim();
-        window.location.href = `../../StudentsAttendance/${name}.html`;
-      }
-    </script>
   </body>
 </html>

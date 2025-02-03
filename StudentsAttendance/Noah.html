@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher - Attendance</title>
+    <title>Student - Attendance</title>
     <link rel="stylesheet" href="./attendance.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
+        <a href="../../index.html"><h1>Learnerr</h1></a>
       </div>
 
       <div class="navbar-links">
         <div
           class="nav-link"
-          onclick="window.location.href='../Assignment/assignment.html'"
+          onclick="window.location.href='../Teacher/Assignment/assignment.html'"
         >
           Assignments
         </div>
         <div
           class="nav-link"
-          onclick="window.location.href='../Attendance/attendance.html'"
+          onclick="window.location.href='../Teacher/Attendance/attendance.html'"
         >
           Attendance
         </div>
@@ -34,38 +34,38 @@
     <div class="table">
       <table border="1">
         <tr>
-          <th>Name</th>
-          <th>Roll No</th>
+          <th>SI.No</th>
+          <th>Subjects</th>
           <th>Attendance</th>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">John</td>
-          <td>001</td>
+          <td>1</td>
+          <td>Physics</td>
           <td>89%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Emma</td>
-          <td>002</td>
+          <td>2</td>
+          <td>English</td>
           <td>95%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Liam</td>
-          <td>003</td>
+          <td>3</td>
+          <td>Mathematics</td>
           <td>92%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Olivia</td>
-          <td>004</td>
+          <td>4</td>
+          <td>Computer Science</td>
           <td>88%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Noah</td>
-          <td>005</td>
+          <td>5</td>
+          <td>Chemistry</td>
           <td>94%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Ava</td>
-          <td>006</td>
+          <td>6</td>
+          <td>Language</td>
           <td>90%</td>
         </tr>
       </table>
@@ -97,11 +97,6 @@
       </div>
       <div class="line"></div>
     </div>
-    <script>
-      function redirectToPage(element) {
-        const name = element.innerText.trim();
-        window.location.href = `../../StudentsAttendance/${name}.html`;
-      }
-    </script>
+    <script src="./attendance.js"></script>
   </body>
 </html>
