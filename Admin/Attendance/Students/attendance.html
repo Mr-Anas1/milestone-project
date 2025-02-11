@@ -10,7 +10,7 @@
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="../../index.html"><h1>Learnerr</h1></a>
+        <a href="../../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
       </div>
 
       <div class="navbar-links">
@@ -35,36 +35,36 @@
       <table border="1">
         <tr>
           <th>Name</th>
-          <th>Roll No</th>
+          <th>Staff Id</th>
           <th>Attendance</th>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">John</td>
+          <td class="studentName">Nelson</td>
           <td>001</td>
           <td>89%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Emma</td>
+          <td class="studentName">Robert</td>
           <td>002</td>
           <td>95%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Liam</td>
+          <td class="studentName">Andy</td>
           <td>003</td>
           <td>92%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Olivia</td>
+          <td class="studentName">Jenifer</td>
           <td>004</td>
           <td>88%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Noah</td>
+          <td class="studentName">Noah</td>
           <td>005</td>
           <td>94%</td>
         </tr>
         <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Ava</td>
+          <td class="studentName">Tony</td>
           <td>006</td>
           <td>90%</td>
         </tr>
@@ -97,11 +97,5 @@
       </div>
       <div class="line"></div>
     </div>
-    <script>
-      function redirectToPage(element) {
-        const name = element.innerText.trim();
-        window.location.href = `../../../StudentsAttendance/${name}.html`;
-      }
-    </script>
   </body>
 </html>

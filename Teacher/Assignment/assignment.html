@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="./assignment.css" />
   </head>
   <body>
+    <div id="overlay">
+      <div class="overlay-content" onclick="off()">
+        <div id="text">Confirm upload the file?</div>
+        <button onclick="uploadFile()">Upload</button>
+      </div>
+    </div>
     <div class="navbar">
       <div class="logo">
-        <a href="../index.html"><h1>Learnerr</h1></a>
+        <a href="../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
       </div>
 
       <div class="navbar-links">
@@ -44,7 +50,7 @@
 
         <div class="file-upload-container">
           <input type="file" id="fileInput" accept="application/pdf" />
-          <button onclick="uploadFile()">Upload</button>
+          <button onclick="on()">Upload</button>
         </div>
       </div>
     </div>
@@ -75,5 +81,15 @@
       </div>
       <div class="line"></div>
     </div>
+
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
   </body>
 </html>

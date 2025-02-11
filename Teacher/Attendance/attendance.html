@@ -8,6 +8,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
+    <div id="attendanceOverlay" class="overlay">
+      <div class="overlay-content">
+        <h3 id="studentName"></h3>
+        <p>Mark Attendance for Subjects:</p>
+        <div id="subjectsList"></div>
+        <button onclick="closeAttendance()">Close</button>
+      </div>
+    </div>
+
     <div class="navbar">
       <div class="logo">
         <a href="../Dashboard/dashboard.html"><h1>Learnerr</h1></a>
@@ -32,41 +41,11 @@
     <div class="chart-title"><h2>Attendance</h2></div>
 
     <div class="table">
-      <table border="1">
+      <table border="1" id="studentTable">
         <tr>
           <th>Name</th>
           <th>Roll No</th>
           <th>Attendance</th>
-        </tr>
-        <tr>
-          <td class="studentName" onclick="redirectToPage(this)">John</td>
-          <td>001</td>
-          <td>89%</td>
-        </tr>
-        <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Emma</td>
-          <td>002</td>
-          <td>95%</td>
-        </tr>
-        <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Liam</td>
-          <td>003</td>
-          <td>92%</td>
-        </tr>
-        <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Olivia</td>
-          <td>004</td>
-          <td>88%</td>
-        </tr>
-        <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Noah</td>
-          <td>005</td>
-          <td>94%</td>
-        </tr>
-        <tr>
-          <td class="studentName" onclick="redirectToPage(this)">Ava</td>
-          <td>006</td>
-          <td>90%</td>
         </tr>
       </table>
     </div>
@@ -97,11 +76,7 @@
       </div>
       <div class="line"></div>
     </div>
-    <script>
-      function redirectToPage(element) {
-        const name = element.innerText.trim();
-        window.location.href = `../../StudentsAttendance/${name}.html`;
-      }
-    </script>
+
+    <script type="module" src="./attendance.js"></script>
   </body>
 </html>
